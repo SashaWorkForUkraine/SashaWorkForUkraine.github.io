@@ -198,9 +198,6 @@ a {
         margin: 0 auto;
         padding-top: 20px;
     }
-    .donation-option {
-        /* margin: 0 auto 20px auto; */
-    }
 }
 
 @media only screen and (max-width: 550px) {
