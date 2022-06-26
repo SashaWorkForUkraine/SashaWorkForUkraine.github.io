@@ -32,9 +32,10 @@ a {
     top: 0;
     right: 0;
     left: 0;
+    z-index: 100;
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
     box-shadow: 0 7px 7px 0 rgba(0, 0, 0, 0.07);
 }
 #topnav a {
@@ -42,6 +43,7 @@ a {
     padding: 1.5vh 1vw;
     margin: 5px;
     border-radius: 5px;
+    background-color: #f3f3f3;
     color: #000000;
     font-size: 20px;
     user-select: none;
@@ -59,7 +61,7 @@ a {
     padding: 1.5vh 1vw;
     margin: 5px;
     color: #000000;
-    font-size: 20px;
+    font-size: 21px;
     user-select: none;
     transition-duration: 300ms;
 }
@@ -108,6 +110,68 @@ a {
 
 
 
+#donation_methods_container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-top: 130px;
+}
+.donation-option-shortcut-list {
+    max-width: 520px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+    margin: 0 5vw;
+    list-style: none;
+}
+.donation-option-shortcut-list a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5vh 65px;
+    margin: 5px;
+    border: 2px solid #f6cd00;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    color: #f6cd00;
+    font-size: 18px;
+    user-select: none;
+    transition-duration: 300ms;
+}
+.donation-option-shortcut-list a:hover, a:active {
+    background-color: #f7f7f7;
+}
+.donation-option-shortcut-list a:before {
+    content: "";
+    background: url(images/down_arrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 22px;
+    height: 26px;
+    position: absolute;
+    left: 10px;
+}
+
+
+.donation-option-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.donation-option {
+    width: fit-content;
+    max-width: 80%;
+    margin: 0 0 20px 0;
+    padding: 5px 30px;
+    border: 2px solid #000000;
+    border-radius: 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 4px 8px 0px;
+}
 
 
 
@@ -115,6 +179,28 @@ a {
 
 
 
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
+    .donation-option-shortcut-list {
+        margin: 0 auto;
+        max-width: 520px
+    }
+    #donation_methods_container {
+        display: block;
+        margin-top: 100px;
+    }
+    .donation-option-list {
+        width: 100%;
+        padding-top: 20px;
+    }
+    .donation-option {
+        margin: 0 auto 20px auto;
+    }
+}
 
 @media only screen and (max-width: 550px) {
     .navbar-toggler {
