@@ -157,15 +157,16 @@ a {
 
 
 .donation-option-list {
+    max-width: fit-content;
     display: flex;
     flex-direction: column;
-    list-style: none;
+    padding: 0 15px;
     margin: 0;
-    padding: 0;
+    list-style: none;
 }
 .donation-option {
-    width: fit-content;
-    max-width: 80%;
+    
+    /* max-width: 80%; */
     margin: 0 0 20px 0;
     padding: 5px 30px;
     border: 2px solid #000000;
@@ -194,11 +195,11 @@ a {
         margin-top: 100px;
     }
     .donation-option-list {
-        width: 100%;
+        margin: 0 auto;
         padding-top: 20px;
     }
     .donation-option {
-        margin: 0 auto 20px auto;
+        /* margin: 0 auto 20px auto; */
     }
 }
 
