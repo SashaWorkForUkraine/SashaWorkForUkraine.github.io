@@ -9,6 +9,10 @@ body {
 a {
     text-decoration: none;
 }
+h1 {
+    font-size: 40px;
+    margin: 0 0 40px 0;
+}
 
 
 .container-fluid {
@@ -110,67 +114,9 @@ a {
 
 
 
-#donation_methods_container {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: start;
-    margin-top: 130px;
-}
-.donation-option-shortcut-list {
-    max-width: 520px;
-    display: flex;
-    flex-direction: column;
-    padding: 0 15px;
-    margin: 0 5vw;
-    list-style: none;
-}
-.donation-option-shortcut-list a {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1.5vh 65px;
-    margin: 5px;
-    border: 2px solid #f6cd00;
-    border-radius: 5px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    color: #f6cd00;
-    font-size: 18px;
-    user-select: none;
-    transition-duration: 300ms;
-}
-.donation-option-shortcut-list a:hover, a:active {
-    background-color: #f7f7f7;
-}
-.donation-option-shortcut-list a:before {
-    content: "";
-    background: url(images/down_arrow.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 22px;
-    height: 26px;
-    position: absolute;
-    left: 10px;
-}
-
-
-.donation-option-list {
-    max-width: fit-content;
-    display: flex;
-    flex-direction: column;
-    padding: 0 15px;
-    margin: 0;
-    list-style: none;
-}
-.donation-option {
-    scroll-margin-top: 90px;
-    margin: 0 0 20px 0;
-    padding: 5px 30px;
-    border: 2px solid #000000;
-    border-radius: 15px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 4px 8px 0px;
+.sbout-sasha-container {
+    text-align: justify;
+    margin: 120px 25vw 0 25vw;
 }
 
 
@@ -184,18 +130,15 @@ a {
 
 
 
-@media only screen and (max-width: 1000px) {
-    .donation-option-shortcut-list {
-        margin: 0 auto;
-        max-width: 520px
+@media only screen and (max-width: 1150px) {
+    .sbout-sasha-container {
+        margin: 120px 15vw 0 15vw;
     }
-    #donation_methods_container {
-        display: block;
-        margin-top: 100px;
-    }
-    .donation-option-list {
-        margin: 0 auto;
-        padding-top: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+    .sbout-sasha-container {
+        margin: 120px 10vw 0 10vw;
     }
 }
 
@@ -222,5 +165,8 @@ a {
         font-size: 17px;
         padding: 1.5vh 5vw;
         background-color: #f5f5f5;
+    }
+    .sbout-sasha-container {
+        margin: 120px 5vw 0 5vw;
     }
 }
