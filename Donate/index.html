@@ -25,7 +25,8 @@
             <div class="navbar-collapse">
                 <ul class="navbar-list">
                     <li><a href="https://sashaworkforukraine.github.io/AboutSasha">About Sasha</a></li>
-                    <li><a href="https://sashaworkforukraine.github.io/Donate">Donate</a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100073523190192">Our Work</a></li>
+                    <li><a id="current-a" href="https://sashaworkforukraine.github.io/Donate">Donate</a></li>
                 </ul>
             </div>
         </div>
@@ -33,18 +34,32 @@
 
     <div id="donation_methods_container">
         <ul class="donation-option-shortcut-list">
+            <li><a onclick="document.getElementById('ukr').scrollIntoView({ behavior: 'smooth'});">Within Ukraine</a></li>
             <li><a onclick="document.getElementById('paypal').scrollIntoView({ behavior: 'smooth'});">Paypal</a></li>
             <li><a onclick="document.getElementById('card').scrollIntoView({ behavior: 'smooth'});">Card</a></li>
         </ul>
 
         <ul class="donation-option-list">
+            <li id="ukr" class="donation-option">
+                <p class="donation-option_header-text">🇺🇦 Payments within Ukraine</p>
+                <div class="text-copy_container">
+                    <p class="text-to-copy">IBAN&emsp;<span id="ukr_iban_copy">UA893052990000026202889116529</span></p>
+                    <button class="copy_icon" onclick="copy_to_clipboard('ukr_iban_copy')"></button>
+                </div>
+            </li>
             <li id="paypal" class="donation-option">
-                <h1>Paypal</h1>
-                <h3>@shorokhForUA</h3>
+                <p class="donation-option_header-text">Paypal</p>
+                <div class="text-copy_container">
+                    <p class="text-to-copy"><span id="paypal_copy">@shorokhForUA</span></p>
+                    <button class="copy_icon" onclick="copy_to_clipboard('paypal_copy')"></button>
+                </div>
             </li>
             <li id="card" class="donation-option">
-                <h1>Card (Wise available)</h1>
-                <h3>4149439318303496</h3>
+                <p class="donation-option_header-text">Card (Wise available)</p>
+                <div class="text-copy_container">
+                    <p class="text-to-copy"><span id="card_wise_copy">4149439318303496</span></p>
+                    <button class="copy_icon" onclick="copy_to_clipboard('card_wise_copy')"></button>
+                </div>
             </li>
         </ul>
     </div>

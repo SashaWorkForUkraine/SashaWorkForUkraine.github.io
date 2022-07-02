@@ -53,6 +53,9 @@ h1 {
     user-select: none;
     transition-duration: 300ms;
 }
+#current-a {
+    background-color: #cccccc !important;
+}
 #topnav a:hover, a:active {
     background-color: #eeeeee;
 }
@@ -114,9 +117,11 @@ h1 {
 
 
 
-.sbout-sasha-container {
+.about-sasha-container {
+    max-width: 700px;
     text-align: justify;
-    margin: 120px 25vw 0 25vw;
+    padding: 0 5vw;
+    margin: 120px auto 0 auto;
 }
 
 
@@ -130,19 +135,7 @@ h1 {
 
 
 
-@media only screen and (max-width: 1150px) {
-    .sbout-sasha-container {
-        margin: 120px 15vw 0 15vw;
-    }
-}
-
-@media only screen and (max-width: 900px) {
-    .sbout-sasha-container {
-        margin: 120px 10vw 0 10vw;
-    }
-}
-
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 700px) {
     .navbar-toggler {
         display: block;
     }
@@ -166,7 +159,13 @@ h1 {
         padding: 1.5vh 5vw;
         background-color: #f5f5f5;
     }
-    .sbout-sasha-container {
-        margin: 120px 5vw 0 5vw;
+}
+@media only screen and (max-width: 450px) {
+    h1 {
+        font-size: 32px;
+        margin: 0 0 30px 0;
+    }
+    .about-sasha-container {
+        margin: 105px auto 0 auto;
     }
 }

@@ -49,6 +49,9 @@ a {
     user-select: none;
     transition-duration: 300ms;
 }
+#current-a {
+    background-color: #cccccc !important;
+}
 #topnav a:hover, a:active {
     background-color: #eeeeee;
 }
@@ -172,7 +175,35 @@ a {
     border-radius: 15px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 4px 8px 0px;
 }
-
+.donation-option_header-text {
+    font-size: 27px;
+    font-weight: 600;
+    margin: 20px 0 10px 0;
+}
+.text-copy_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 10px 0;
+}
+.text-to-copy {
+    font-size: 16px;
+    font-weight: 100;
+    margin: 10px 20px 10px 0;
+}
+.copy_icon {
+    display: inline-block;
+    background: url(images/copy_icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 20px;
+    height: 26px;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+}
 
 
 
@@ -199,7 +230,7 @@ a {
     }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 700px) {
     .navbar-toggler {
         display: block;
     }
