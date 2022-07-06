@@ -9,10 +9,6 @@ body {
 a {
     text-decoration: none;
 }
-h1 {
-    font-size: 40px;
-    margin: 0 0 40px 0;
-}
 
 
 .container-fluid {
@@ -42,7 +38,7 @@ h1 {
     backdrop-filter: blur(10px);
     box-shadow: 0 7px 7px 0 rgba(0, 0, 0, 0.07);
 }
-#topnav a {
+.other_pages_links {
     display: block;
     padding: 1.5vh 1vw;
     margin: 5px;
@@ -56,11 +52,33 @@ h1 {
 #current-a {
     background-color: #cccccc !important;
 }
-#topnav a:hover, a:active {
+.other_pages_links:hover, .other_pages_links:active {
     background-color: #eeeeee;
 }
-#topnav a:visited {
+.other_pages_links:visited {
     color: #000000;
+}
+#language_change_link {
+    display: flex;
+    align-items: center;
+    padding: 1.5vh 1vw;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 600;
+    user-select: none;
+    transition-duration: 300ms;
+}
+#language_change_link:hover, #language_change_link:active {
+    background-color: #f5f5f5;
+}
+#language_change_link:visited {
+    color: #000000;
+}
+#language_icon {
+    margin-right: 5px;
 }
 .logo {
     float: left;
@@ -123,6 +141,17 @@ h1 {
     padding: 0 5vw;
     margin: 120px auto 0 auto;
 }
+.about-sasha-container a {
+    font-weight: bold;
+}
+.about-sasha-container p {
+    font-size: 18px;
+}
+.about-sasha-container h1 {
+    text-align: left;
+    font-size: 37px;
+    margin: 30px 0 30px 0;
+}
 
 
 
@@ -134,8 +163,16 @@ h1 {
 
 
 
+@media only screen and (max-width: 750px) {
+    #topnav {
+        padding: 2px 10px;
+    }
 
-@media only screen and (max-width: 700px) {
+    .about-sasha-container {
+        margin: 100px auto 0 auto;
+    }
+}
+@media only screen and (max-width: 730px) {
     .navbar-toggler {
         display: block;
     }
@@ -154,18 +191,40 @@ h1 {
         list-style: none;
         box-sizing: border-box;
     }
-    #topnav a {
+    .other_pages_links {
         font-size: 17px;
         padding: 1.5vh 5vw;
         background-color: #f5f5f5;
     }
-}
-@media only screen and (max-width: 450px) {
-    h1 {
-        font-size: 32px;
-        margin: 0 0 30px 0;
+    #language_change_link {
+        padding: 1.5vh 5vw;
+        margin-bottom: 10px;
+        background-color: #f9f9f9;
+    }
+
+    
+    .about-sasha-container p {
+        font-size: 17px;
+    }
+
+
+    #topnav {
+        padding: 0 10px;
     }
     .about-sasha-container {
-        margin: 105px auto 0 auto;
+        margin: 95px auto 0 auto;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .about-sasha-container p {
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .about-sasha-container h1 {
+        font-size: 30px;
+    }
+    .about-sasha-container {
+        margin: 85px auto 0 auto;
     }
 }

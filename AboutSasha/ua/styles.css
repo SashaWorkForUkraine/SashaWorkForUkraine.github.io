@@ -40,7 +40,7 @@ a {
 }
 .other_pages_links {
     display: block;
-    padding: 1.5vh 1vw;
+    padding: 1.5vh 0.7vw;
     margin: 5px;
     border-radius: 5px;
     background-color: #f3f3f3;
@@ -109,7 +109,7 @@ a {
     background-color: #015bbb;
 }
 .navbar-toggler {
-    background: url(../images/dropdown1.png);
+    background: url(../../images/dropdown1.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -135,96 +135,22 @@ a {
 
 
 
-#donation_methods_container {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: start;
-    margin-top: 130px;
+.about-sasha-container {
+    max-width: 700px;
+    text-align: justify;
+    padding: 0 5vw;
+    margin: 120px auto 0 auto;
 }
-.donation-option-shortcut-list {
-    max-width: 520px;
-    display: flex;
-    flex-direction: column;
-    padding: 0 15px;
-    margin: 0 5vw;
-    list-style: none;
+.about-sasha-container a {
+    font-weight: bold;
 }
-.donation-option-shortcut-list a {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1.5vh 65px;
-    margin: 5px;
-    border: 2px solid #f6cd00;
-    border-radius: 5px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    color: #f6cd00;
+.about-sasha-container p {
     font-size: 18px;
-    user-select: none;
-    transition-duration: 300ms;
 }
-.donation-option-shortcut-list a:hover, a:active {
-    background-color: #f7f7f7;
-}
-.donation-option-shortcut-list a:before {
-    content: "";
-    background: url(images/down_arrow.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 22px;
-    height: 26px;
-    position: absolute;
-    left: 10px;
-}
-
-
-.donation-option-list {
-    max-width: fit-content;
-    display: flex;
-    flex-direction: column;
-    padding: 0 15px;
-    margin: 0;
-    list-style: none;
-}
-.donation-option {
-    scroll-margin-top: 90px;
-    margin: 0 0 20px 0;
-    padding: 5px 30px;
-    border: 2px solid #000000;
-    border-radius: 15px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 4px 8px 0px;
-}
-.donation-option_header-text {
-    font-size: 27px;
-    font-weight: 600;
-    margin: 20px 0 10px 0;
-}
-.text-copy_container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 10px 0;
-}
-.text-to-copy {
-    font-size: 16px;
-    font-weight: 100;
-    margin: 10px 20px 10px 0;
-}
-.copy_icon {
-    display: inline-block;
-    background: url(images/copy_icon.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 20px;
-    height: 26px;
-    margin: 0;
-    border: none;
-    cursor: pointer;
+.about-sasha-container h1 {
+    text-align: left;
+    font-size: 37px;
+    margin: 30px 0 30px 0;
 }
 
 
@@ -237,31 +163,14 @@ a {
 
 
 
-@media only screen and (max-width: 1000px) {
-    .donation-option-shortcut-list {
-        margin: 0 auto;
-        max-width: 520px
-    }
-    #donation_methods_container {
-        display: block;
-        margin-top: 100px;
-    }
-    .donation-option-list {
-        margin: 0 auto;
-        padding-top: 20px;
-    }
-}
+
+
 
 
 
 
 
 @media only screen and (max-width: 800px) {
-    #topnav {
-        padding: 2px 10px;
-    }
-}
-@media only screen and (max-width: 730px) {
     .navbar-toggler {
         display: block;
     }
@@ -291,8 +200,29 @@ a {
         background-color: #f9f9f9;
     }
 
+    
+    .about-sasha-container p {
+        font-size: 17px;
+    }
+
 
     #topnav {
         padding: 0 10px;
+    }
+    .about-sasha-container {
+        margin: 95px auto 0 auto;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .about-sasha-container p {
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .about-sasha-container h1 {
+        font-size: 30px;
+    }
+    .about-sasha-container {
+        margin: 85px auto 0 auto;
     }
 }

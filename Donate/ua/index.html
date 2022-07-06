@@ -2,7 +2,7 @@
 
 <head>
     <title>SashaWorkForUkraine</title>
-    <link rel="icon" type="image/x-icon" href="../images/favicon1.ico">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon1.ico">
 
     <link rel="stylesheet" type="text/css" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,10 +24,10 @@
             <button class="navbar-toggler" type="button" onclick="toggle_navbar_list()"></button>
             <div class="navbar-collapse">
                 <ul class="navbar-list">
-                    <li><a class="other_pages_links" href="https://sashaworkforukraine.github.io/AboutSasha">About Sasha</a></li>
-                    <li><a class="other_pages_links" href="https://www.facebook.com/profile.php?id=100073523190192">Our Work</a></li>
-                    <li><a class="other_pages_links" id="current-a" href="https://sashaworkforukraine.github.io/Donate">Donate</a></li>
-                    <li><a id="language_change_link" href="https://sashaworkforukraine.github.io/AboutSasha/ua"><img id="language_icon" src="../images/language.png">Ua</a></li>
+                    <li><a class="other_pages_links" href="https://sashaworkforukraine.github.io/AboutSasha/ua">Про Сашу</a></li>
+                    <li><a class="other_pages_links" href="https://www.facebook.com/profile.php?id=100073523190192">Наша робота</a></li>
+                    <li><a class="other_pages_links" id="current-a" href="https://sashaworkforukraine.github.io/Donate/ua">Підтримати</a></li>
+                    <li><a id="language_change_link" href="https://sashaworkforukraine.github.io/AboutSasha"><img id="language_icon" src="../../images/language.png">Eng</a></li>
                 </ul>
             </div>
         </div>
@@ -35,14 +35,14 @@
 
     <div id="donation_methods_container">
         <ul class="donation-option-shortcut-list">
-            <li><a onclick="document.getElementById('ukr').scrollIntoView({ behavior: 'smooth'});">Within Ukraine</a></li>
+            <li><a onclick="document.getElementById('ukr').scrollIntoView({ behavior: 'smooth'});">По Україні</a></li>
             <li><a onclick="document.getElementById('paypal').scrollIntoView({ behavior: 'smooth'});">Paypal</a></li>
-            <li><a onclick="document.getElementById('card').scrollIntoView({ behavior: 'smooth'});">Card</a></li>
+            <li><a onclick="document.getElementById('card').scrollIntoView({ behavior: 'smooth'});">Картка</a></li>
         </ul>
 
         <ul class="donation-option-list">
             <li id="ukr" class="donation-option">
-                <p class="donation-option_header-text">🇺🇦 Payments within Ukraine</p>
+                <p class="donation-option_header-text">🇺🇦 По Україні</p>
                 <div class="text-copy_container">
                     <p class="text-to-copy">IBAN&emsp;<span id="ukr_iban_copy">UA893052990000026202889116529</span></p>
                     <button class="copy_icon" onclick="copy_to_clipboard('ukr_iban_copy')"></button>
@@ -56,7 +56,7 @@
                 </div>
             </li>
             <li id="card" class="donation-option">
-                <p class="donation-option_header-text">Card (Wise available)</p>
+                <p class="donation-option_header-text">Картка (доступний Wise)</p>
                 <div class="text-copy_container">
                     <p class="text-to-copy"><span id="card_wise_copy">4149439318303496</span></p>
                     <button class="copy_icon" onclick="copy_to_clipboard('card_wise_copy')"></button>
