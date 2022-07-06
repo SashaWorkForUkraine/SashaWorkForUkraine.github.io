@@ -295,4 +295,9 @@ a {
     #topnav {
         padding: 0 10px;
     }
+
+
+    #donation_methods_container {
+        margin-top: 80px;
+    }
 }

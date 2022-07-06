@@ -293,4 +293,8 @@ a {
     .about-sasha-container {
         margin: 95px auto 0 auto;
     }
+
+    #donation_methods_container {
+        margin-top: 80px;
+    }
 }
